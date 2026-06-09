@@ -239,7 +239,7 @@ For instance, a function that extracts the third dimension from a {anchorName de
 ```anchor depth
 def depth (p : Point3D) : Float :=
   match p with
-  | { x:= h, y := w, z := d } => d
+  | { x:= _, y := _, z := d } => d
 ```
 
 In this case, it would have been much simpler to just use the {anchorName fragments}`Point3D.z` accessor, but structure patterns are occasionally the simplest way to write a function.
